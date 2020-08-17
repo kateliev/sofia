@@ -1,0 +1,25 @@
+{	
+	"game_name": 	"Sofia Test",
+	"game_version": "0.1",
+	"game_setting": {	"rooms": 	{	"new_room": {	"description": 	"You are in a new room...",
+														"inventory": 	["book"],
+														"location": 	{"north": null, "south": null, "east": null, "west": null}
+													}
+						},
+										
+						"inventory":{ 	"book": 	{	"description": "An old book lays on the floor.",
+														"inventory": []
+													}
+
+						},
+
+						"actors": 	{ 	"main":		{ 	"description" : "This is you.",
+														"location":	"new_room",
+														"inventory": []
+
+													}
+						}
+				
+					}
+	
+}
