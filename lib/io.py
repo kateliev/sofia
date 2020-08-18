@@ -11,7 +11,7 @@
 from __future__ import unicode_literals, print_function
 import json, json.scanner
 
-from objects import attribdict
+from objects import GameObject
 
 # - Init -------------------------------
 __version__ = '0.0.2'
@@ -23,7 +23,7 @@ class io_json_decoder(json.JSONDecoder):
 		self.__parse_object = self.parse_object
 		self.parse_object = self._parse_object
 		self.scan_once = json.scanner.py_make_scanner(self)
-		self.__tree_class = attribdict
+		self.__tree_class = GameObject
 	
 	def _parse_object(self, *args, **kwdargs):
 		result = self.__parse_object(*args, **kwdargs)
